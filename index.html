@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #90EE90;
+        }
+        header {
+            background-image: url('park-image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .description {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .contact {
+            float: right;
+            width: 30%;
+            padding: 20px;
+            background-color: #eee;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .contact h2 {
+            margin-top: 0;
+        }
+        .contact p {
+            margin-bottom: 10px;
+        }
+        .park-links {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .park-links img {
+            width: 30%;
+            margin: 10px;
+        }
+footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+</style>
+<script language="JavaScript"> 
+var i = 0; var path = new Array(); 
+
+// LIST OF IMAGES 
+path[0] = "images/S1.jpg"; 
+path[1] = "images/S2.jpg"; 
+path[2] = "images/S3.jpg"; 
+
+function swapImage() 
+{ 
+document.slide.src = path[i]; 
+if(i < path.length - 1) i++; 
+else i = 0; 
+setTimeout("swapImage()",3000); 
+} 
+window.onload=swapImage; 
+</script>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-green w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">THE PARKS </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">THE PARKS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+
+
+</div>
+
+<!-- Page content -->
+
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+      <img height="600" name="slide" src="images/S1.jpg" width="auto" /> 
+	  <h2 class="w3-wide">THE PARKS</h2>
+    <p class="w3-opacity"><i>Green is the new Black</i></p>
+    <p class="w3-justify">Embrace nature and spend less time indoors. Discover the beauty of Manchester's green spaces.</p>
+	<h2 class="w3-wide">heaton park</h2>
+	<img src="images/alex.jpg" alt="Italian Trulli">
+	<p>Heaton Park is a big park in Manchester, England. It has lots of green space, trees, and a lake where people can go boating. There are also gardens with flowers and plants. People like to visit Heaton Park for picnics, walks, and playing sports. There's a playground for kids to enjoy, too. It's a nice place to spend time outside and relax with family and friends.<p>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9484.695403499003!2d-2.2424093!3d53.53681!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb006264fc2c9%3A0x2581bc3b9853b122!2sHeaton%20Park!5e0!3m2!1sen!2suk!4v1718197528228!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<br>
+	<h2 class="w3-wide">Alexandra park</h2>
+	<img src="images/heaton.jpg" alt="Italian Trulli">
+	<p>
+Alexandra Park is a park located in Moss Side, Manchester. It's a smaller park with grassy areas, trees, and a pond. People often come here to have picnics, walk their dogs, or just enjoy nature. There's also a playground for children to play in. Alexandra Park is a peaceful spot where locals can relax and unwind outdoors.
+
+
+
+
+
+
+<p>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2378.905575213714!2d-2.174400722804319!3d53.39862897230468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb36eba892bf3%3A0xda7eb6fd037b643d!2sAlexandra%20Park!5e0!3m2!1sen!2suk!4v1718198128151!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<br>
+	<h2 class="w3-wide">Longoford Park</h2>
+	<img src="images/longford.jpg" alt="Italian Trulli">
+	<p>Longford Park is a lovely park in Stretford, Manchester. It's a medium-sized park with green fields, trees, and a beautiful lake. Many people visit Longford Park to have picnics, go for walks, or simply relax by the water. The park also has a playground for kids to play in and sports fields where people can enjoy various outdoor activities. Longford Park is a great place for families and friends to spend quality time together in nature.
+
+
+
+
+
+
+<p>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9504.529586787829!2d-2.2903475!3d53.4482195!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487baddb3ae84563%3A0x47c386480fdedbae!2sLongford%20Park!5e0!3m2!1sen!2suk!4v1718198527379!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    </div>
+  </div>
+
+</p>
+
+		</div>
+
+        <div class="article" id="contact-us">
+
+            <h2>Contact Us</h2>
+
+            <div class="contact-form">
+
+                <form action="mailto:2106797@cheadle.tcg.ac.uks0102236@cheadle.tcg.ac.uk" method="post" enctype="text/plain">
+
+                    <label for="name">Name:</label><br>
+
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="email">Email:</label><br>
+
+                    <input type="text" id="email" name="email" required><br>
+
+                    <label for="message">Message:</label><br>
+
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <p>&copy; 2024 Nature in the City</p>
+
+    </footer>
+
+</body>
+
+</html> 
+  
+<!-- End Page Content -->
+</div>
+
+
+
+<!-- Footer -->
+<footer>
+        <p>2024 Explore Your Local Green Spaces</p>
+    </footer>
+
+
+</body>
+</html>
